@@ -15,7 +15,7 @@ services:
     pgadmin:
         image: dpage/pgadmin4
         environment: 
-            - PGADMIN_DEFAULT_EMAIL=susonsapkota@gmail.com
+            - PGADMIN_DEFAULT_EMAIL=test@test.com
             - PGADMIN_DEFAULT_PASSWORD=123456
         ports: 
             - "5050:80"
