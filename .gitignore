@@ -1,0 +1,6 @@
+venv/
+vvenv/
+postgres_target_env/
+mysql_tap_env/
+
+.idea/

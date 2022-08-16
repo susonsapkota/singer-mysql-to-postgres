@@ -1,0 +1,83 @@
+{
+  "streams": [
+    {
+      "tap_stream_id": "db-employee",
+      "table_name": "employee",
+      "schema": {
+        "properties": {
+          "id": {
+            "inclusion": "automatic",
+            "minimum": -2147483648,
+            "maximum": 2147483647,
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "name": {
+            "inclusion": "available",
+            "maxLength": 45,
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "date": {
+            "inclusion": "available",
+            "format": "date-time",
+            "type": [
+              "null",
+              "string"
+            ]
+          }
+        },
+        "type": "object"
+      },
+      "stream": "employee",
+      "metadata": [
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "selected-by-default": false,
+            "database-name": "db",
+            "row-count": 0,
+            "is-view": false,
+            "table-key-properties": [
+              "id"
+            ]
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "id"
+          ],
+          "metadata": {
+            "selected-by-default": true,
+            "sql-datatype": "int"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "name"
+          ],
+          "metadata": {
+            "selected-by-default": true,
+            "sql-datatype": "varchar(45)"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "date"
+          ],
+          "metadata": {
+            "selected-by-default": true,
+            "sql-datatype": "datetime"
+          }
+        }
+      ]
+    }
+  ]
+}
